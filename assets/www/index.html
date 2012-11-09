@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+	
+<head>
+	<title>DigitalNoiz</title>
+	<!-- jQuery Mobile setup -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mylibs/jQueryMobile/jquery.mobile-1.0.1.min.css" />
+    <script src="mylibs/jquery-1.7.1.min.js"></script>
+    <script src="mylibs/jQueryMobile/jquery.mobile-1.0.1.min.js"></script>
+	<!-- Phonegap setup -->
+	<script type="text/javascript" charset="utf-8" src="mylibs/cordova-2.1.0.js"></script>
+	
+	<link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" charset="utf-8" src="js/fileExplorer.js"></script>
+</head>
+
+<body>
+
+<div id="home" data-role="page">
+      <div data-role="header">
+            <a id="backBtn" href="#" data-icon="arrow-l">Back</a>
+            <h1>Documents</h1>
+            <a id="homeBtn" href="index.html" data-icon="home" data-transition="pop">Home</a>
+      </div>
+      <div data-role="content">
+		<ul data-role="listview" id="dirContent"></ul>
+            <a id="menu" href="#menuOptions" data-rel="dialog" style="display:none">Folder is empty!</a>
+      </div>
+</div>
+
+<div id="menuOptions" data-role="page">
+	<div data-role="header">
+            <h1>Choose</h1>
+      </div>
+      <div data-role="content">
+      	<p id="fileName"></p>
+      	<input type="button" id="openBtn" data-theme="e" value="Open">
+      	<input type="button" id="closeBtn" value="Close">
+      </div>
+</div>
+</body>
+</html>
